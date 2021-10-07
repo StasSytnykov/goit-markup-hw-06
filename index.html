@@ -81,6 +81,42 @@
                   <use href="./images/sprite.svg#icon-close-modal"></use>
                 </svg>
               </button>
+              <h2 class="modal-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <form class="form-modal">
+                <ul class="form-data">
+                  <li class="form-fields">
+                    <label class="modal-label" for="name">Имя</label>
+                    <input type="text" name="name" id="name" />
+                  </li>
+                  <li class="form-fields">
+                    <label class="modal-label" for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </li>
+                  <li class="form-fields">
+                    <label class="modal-label" for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" />
+                  </li>
+                  <li class="form-fields">
+                    <label class="modal-label" for="comment">Комментарий</label>
+                    <textarea
+                      class="comment"
+                      name="comment"
+                      id="comment"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </li>
+                </ul>
+                <div class="form-policy">
+                  <input type="checkbox" name="policy" id="policy" />
+                  <label class="modal-label" for="policy"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="policy-term" href="">Условия договора</a>
+                  </label>
+                </div>
+                <button class="send-button" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -422,7 +458,7 @@
             </a>
           </div>
         </div>
-        <form class="form">
+        <form class="form-footer">
           <div class="form-direction">
             <label for="mail" class="form-label">Подпишитесь на рассылку</label>
             <input
