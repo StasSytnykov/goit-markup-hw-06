@@ -278,7 +278,7 @@ img {
 
 .modal-btn {
   position: absolute;
-  top:8px;
+  top: 8px;
   right: 8px;
 
   width: 30px;
@@ -640,9 +640,12 @@ section-title {
 }
 
 .footer-container {
+  display: flex;
+}
+
+.contact-thumb {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
 }
 
 .footer .footer-text {
@@ -677,6 +680,8 @@ section-title {
 
 .social-footer {
   margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .social-text {
@@ -717,4 +722,55 @@ section-title {
 
 .footer-social-link + .footer-social-link {
   margin-left: 10px;
+}
+
+.form {
+  display: flex;
+  margin-left: 93px;
+  padding-top: 72px;
+  padding-bottom: 94px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+.form-direction {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 20px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+  height: 50px;
+  width: 200px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--accent-color);
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: currentColor;
 }
