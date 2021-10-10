@@ -323,7 +323,7 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="contact-thumb">
           <a class="logo" href="./index.html" lang="en">
             <span class="logo-style">Web</span
             ><span class="logo-style-footer">Studio</span></a
@@ -366,6 +366,24 @@
             </a>
           </div>
         </div>
+        <form class="form-footer">
+          <div class="form-direction">
+            <label for="mail" class="form-label">Подпишитесь на рассылку</label>
+            <input
+              type="email"
+              for="mail"
+              id="mail"
+              class="form-input"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="footer-btn" type="submit">
+            Подписаться
+            <svg class="icon-send" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
