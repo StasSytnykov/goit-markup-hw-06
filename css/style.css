@@ -307,6 +307,15 @@ img {
   border-color: var(--style-color);
 }
 
+.modal-label:hover .modal-input,
+.modal-label:focus .modal-input {
+  border-color: var(--style-color);
+}
+
+.modal-label:hover .modal-icon {
+  fill: var(--style-color);
+}
+
 .form-text {
   margin-bottom: 4px;
 
@@ -328,7 +337,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
@@ -338,7 +347,7 @@ img {
 
   cursor: pointer;
 
- transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment {
@@ -366,12 +375,19 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.comment:hover,
+.comment:focus {
+  border-color: var(--style-color);
+}
+
 .form-policy {
   position: relative;
   display: flex;
   margin-top: 20px;
   margin-bottom: var(--gap);
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .form-policy .modal-label {
@@ -382,27 +398,28 @@ img {
 }
 
 .checkbox {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .icon-check {
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
 }
 
 .checkbox:checked + .icon-check {
-  opacity: 0;
-}
-
-.icon-check-active {
-  position: absolute;
-  opacity: 0;
-  margin-left: 13px;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox:checked ~ .icon-check-active {
-  opacity: 1;
+  border-color: var(--style-color);
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .modal-label {
@@ -827,11 +844,6 @@ section-title {
   padding-bottom: 60px;
 }
 
-.footer .footer-text {
-  color: var(--accent-color);
-  font-style: normal;
-}
-
 .footer .link {
   text-decoration: none;
   font-weight: 500;
@@ -851,6 +863,11 @@ section-title {
 .footer-text {
   margin-bottom: 9px;
   margin-top: 20px;
+
+  color: var(--accent-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .footer-contacts-list .list + .list {
