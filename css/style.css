@@ -417,6 +417,7 @@ img {
 
 .checkbox:checked + .icon-check {
   border-color: var(--style-color);
+  background-color: var(--style-color);
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
